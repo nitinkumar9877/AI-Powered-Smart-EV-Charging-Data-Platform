@@ -1,0 +1,17 @@
+{
+  "training_backend": "numpy_least_squares_baseline",
+  "occupancy_model": {
+    "mae": 0.5335,
+    "rmse": 0.8092,
+    "r2": 0.9955
+  },
+  "waiting_time_model": {
+    "mae": 0.1709,
+    "rmse": 0.2592,
+    "r2": 0.9993
+  },
+  "overload_risk_model": {
+    "accuracy": 0.8939,
+    "f1": 0.8852
+  }
+}

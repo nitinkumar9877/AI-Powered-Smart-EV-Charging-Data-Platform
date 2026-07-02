@@ -1,0 +1,30 @@
+CREATE OR REPLACE VIEW ev_charging_gold.ml_station_features AS
+SELECT
+    station_key,
+    charging_station_id,
+    charging_station_location,
+    vehicle_model,
+    charger_type,
+    user_type,
+    weather_condition,
+    traffic_level,
+    charging_hour,
+    charging_month,
+    is_weekend,
+    is_peak_hour,
+    energy_consumed_kwh,
+    charging_duration_hours,
+    charging_rate_kw,
+    battery_capacity_kwh,
+    soc_start_percent,
+    soc_end_percent,
+    distance_since_last_charge_km,
+    temperature_c,
+    humidity_percent,
+    precipitation_mm,
+    wind_speed_kph,
+    traffic_score,
+    road_congestion_index,
+    nearby_events_count
+FROM ev_charging_silver.charging_events_cleaned;
+
